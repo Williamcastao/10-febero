@@ -8,41 +8,48 @@
     <style>
         body{
             background-image: url('./coche.jpg');
-            background-size: cover;
-            
-        }
-        
+            background-size: cover;    
+        } 
         h2{
             color:blue;
             font-family: 'Courier New', Courier, monospace;
-
         }
-       
-      
+        button{
+            background-color:aqua;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: inline-flex;
+            width: 90px;
+            height: 50px;
+            cursor: pointer;
+            transition: all;
+            border-radius: 10px;
+            color: purple;
+
+        }      
     </style>
 </head>
 <body>
     <form action="">
         <h2>Ingrese nombres</h2>
-        <input type="text" placeholder="Ingresasr nombres">
+        <input type="text" placeholder="Ingresasr nombres" required>
         <br>
         <h2>Ingrese Apellidos</h2>
-        <input type="text" placeholder="Ingresar apellidos">
+        <input type="text" placeholder="Ingresar apellidos" required>
         <br>
         <h2>Ingrese correo</h2>
-            <input type="email"placeholder="Ingrese correo">
+            <input type="email"placeholder="Ingrese correo" required>
         <br>
         <h2>Ingrese numero de identificacion</h2>
-            <input type="number" placeholder="Ingrese documento">
+            <input type="number" placeholder="Ingrese documento" required>
         <br>
         <h2>Ingrese numero de celular</h2>
-            <input type="number" placeholder="Ingrese numero">
+            <input type="number" placeholder="Ingrese numero" required>
             <br>
         <h2>Cargar foto</h2>
             <input type="file" name="imagen"/>
         <br>
         <h2>Eliga su ciudad</h2>
-            <select name="ciudad" id="">
+            <select name="ciudad" id="" required>
                 <option value="">No seleccionado</option>
                 <option value="">Bogota</option>
                 <option value="">Medellin</option>
@@ -62,7 +69,8 @@
             <input type="radio" name="g">
             Femenino
             <input type="radio" name="g">
-    </form>
-    
+            <br>
+            <button type="submit">Enviar info</button>     
+    </form> 
 </body>
 </html>
