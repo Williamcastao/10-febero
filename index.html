@@ -7,64 +7,62 @@
     <title>Formulario</title>
     <style>
         body{
-            background-image: url('./blanco.jpg');
+            background-image: url('./coche.jpg');
             background-size: cover;
-            padding: 50px;
             
         }
         
         h2{
             color:blue;
+            font-family: 'Courier New', Courier, monospace;
 
         }
+       
       
     </style>
 </head>
 <body>
-    
-        <center>
-        <input type="text" placeholder="Ingrese nombres">
-        <center>
+    <form action="">
+        <h2>Ingrese nombres</h2>
+        <input type="text" placeholder="Ingresasr nombres">
         <br>
-        <center>
-            <input type="text" placeholder="Ingrese apellidos">
-        </center>
+        <h2>Ingrese Apellidos</h2>
+        <input type="text" placeholder="Ingresar apellidos">
         <br>
-        <center>
+        <h2>Ingrese correo</h2>
+            <input type="email"placeholder="Ingrese correo">
+        <br>
+        <h2>Ingrese numero de identificacion</h2>
             <input type="number" placeholder="Ingrese documento">
-        </center>
         <br>
-        <center>
-            <input type="password" placeholder="Ingrese contraseña">
-        </center>
-        <br>
-        <center>
+        <h2>Ingrese numero de celular</h2>
             <input type="number" placeholder="Ingrese numero">
-        </center>
-        <h2>Ingrese genero</h2>
-        Masculino
-        <input type="radio" name="g">
+            <br>
+        <h2>Cargar foto</h2>
+            <input type="file" name="imagen"/>
         <br>
-        <input type="radio" name="g">
-        Femenino  
-        </center>  
-        <center>
-        <h2>Selecciona tu ciudad</h2>
-        <select name="ciudad" id="">
-            <option value="">Bogota</option>
-            <option value="">Medellin</option>
-            <option value="">Cartagena</option>
-            <option value="">Huila</option>
-            <option value="">Tolima</option>
-            <option value="">Bucaramanga</option>
-            <option value="">Cucuta</option>
-            <option value="">Santa Marta</option>
-            <option value="">Cali</option>
-            <option value="">Pereira</option>
-        </select>
-        </center>
-
-
+        <h2>Eliga su ciudad</h2>
+            <select name="ciudad" id="">
+                <option value="">No seleccionado</option>
+                <option value="">Bogota</option>
+                <option value="">Medellin</option>
+                <option value="">Pereira</option>
+                <option value="">Manizales</option>
+                <option value="">Cucuta</option>
+                <option value="">Santa Marta</option>
+                <option value="">Cartagena</option>
+                <option value="">Barrranquilla</option>
+                <option value="">Cali</option>
+                <option value="">Huila</option>
+                <option value="">Tolima</option>
+            </select>
+            <br>
+            <h2>Selecciona tu genero</h2>
+            Masculino
+            <input type="radio" name="g">
+            Femenino
+            <input type="radio" name="g">
+    </form>
     
 </body>
 </html>
